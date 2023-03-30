@@ -6,6 +6,13 @@
     
     
 }
+.navBarLogIn{
+  transition: translate 5s;
+}
+
+.navBarLogIn:hover{
+        translate: -200px;
+}
 .formLogin{
     background-color: aqua;
     width: 70%;
