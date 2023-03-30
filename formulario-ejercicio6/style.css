@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.distancia{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.fondo{
+    background-color: rgba(245, 211, 149, 0.986);
+}
+

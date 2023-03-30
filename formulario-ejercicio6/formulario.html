@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" class="formulario" >
+
+        <label for="nombre">
+            Nombre
+            <input type="text" name="nombre" required>
+        </label>
+
+        <label for="apellido">
+            Apellido
+            <input type="text" name="apellido" required>
+        </label>
+
+        <label for="email">
+            Correo Electronico
+
+            <input type="email" name="email" onmousemove="mostrar()">
+        </label>
+
+        <label for="password">
+            Contraseña
+            <input type="password" name="password" placeholder="ejemplo@email.com">
+        </label>
+
+        <label for="mensaje" class="distancia">
+           
+            Comentario 
+        
+            <textarea name="mensaje" placeholder="Escribir mensaje..." maxlength="50"></textarea>
+        </label>
+
+        <label for="curso">Indique el curso a anotarse </label>
+        <label for="htmlYcss">
+            HTML5 y CSS3
+            <input type="checkbox" name="htmlYcss" value="HTML5 y CSS3">
+        </label>
+        <label for="JavaScript">
+            JavaScript
+            <input type="checkbox" name="JavaScript" value="JavaScript">
+        </label>
+        <label for="JQuery" class="juery">
+            JQuery
+            <input type="checkbox" name="JQuery" value="JQuery" >
+        </label>
+
+        <label for="turno">Indique en que turno quiere anotarse</label>
+
+            <label for="turnoT" >
+                Turno Tarde
+                <input type="radio" name="turnoT" value="tarde" disabled />
+            </label>
+
+            <label for="turnoN" >
+                Turno Noche
+                <input type="radio" name="turnoN" value="noche" disabled/>
+            </label>
+           
+            <button class="botonSubmit" type="submit">ENVIAR</button>
+       
+    </form>
+    <script src="./scripsejformulario.js"></script>
+</body>
+</html>

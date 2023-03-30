@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juampi CV</title>
+</head>
+<body>
+    <head>
+        <button id="toggle-options">Indice</button>
+        <div id="additional-options" style="display: none;">
+            <p>Acerca de mi</p>
+            <p>Intereses</p>
+            <p>Tecnologias</p>
+            <p>Hobbies</p>
+            <p>Contacto</p>
+        </div>
+        <div class="barraInicio"></div>
+        
+    </head>
+    <div class="panelIntro"> 
+      <img class="imagenLogo" src="imagenes/Avatar-Maker.png" alt="">
+     
+    </div>
+    <div class="divDivisor">
+        <h1 class="TitdeMI">Acerca de mi</h1>
+    </div>
+    <div class="descripcionT">
+        <p class="descripcion">I introduce myself. My name is Juan Pablo, and I'm from Argentina living in berlin with a student visa since a year ago, I'm 29 years old and I'm interested in work with you.
+            After finishing high school, I started a career in Computer Engineering, and after a year I changed to Computer Systems Analyst.
+            Unfortunately, after 3 years of study, I had to start working, not being able to finish with these.
+            In the year 2020, I left Argentina and lived 1 year in Copenhagen, Denmark, the following year, I came to Berlin where I live now.
+            I am physically prepared for heavy work, and I have good knowledge about electricity and electronics. 
+            I have experience with handling heavy electronic equipment, In Denmark I worked in a scooter repair company, where I and my team were in charge of moving, fixing and registering the batteries of the scooters.
+            I am studying German, at the moment it is basic, but improving.
+            Is it possible to have a personal interview to get to know each other?
+            
+            Thank you very much for your time. </p>
+    </div>
+    <button class="botonLibrosFavoritos" onclick="MostraSeries()">Series Favoritas
+    </button>
+    <button class="botonLibrosFavoritos" onclick="MostrarLibros()">Libros Favoritos
+    </button>        
+    <button class="botonLibrosFavoritos" onclick="MostrarHobbis()">Hobbies</button>
+      
+    <div class="containerLibrosFavoritos contBoxElementos" style="display: none;">
+            <div class="box boxLibro">
+                <h2>El Nombre Del Viento</h2>
+                <p>Patrik Rothfuss</p>
+                <img src="imagenes/ElNombreDelViento.jpg" alt="" srcset="">
+                <p>"El nombre del viento. Crónica del asesino de reyes: primer día es una novela de fantasía épica, perteneciente a la serie Crónica del Asesino de Reyes, escrita por Patrick Rothfuss, escritor estadounidense y profesor adjunto de lengua y filología inglesa en la Universidad de Wisconsin"
+                </p>
+            </div>
+            <div class="box boxLibro">
+                <h2>Cómo ganar amigos e influir</h2>
+                <p>Dale</p>
+                <img src="imagenes/ComoInfluir.jpg" alt="" srcset="">
+                <p>Cómo ganar amigos e influir sobre las personas es uno de los primeros best-sellers de autoayuda publicados. Escrito por Dale Carnegie y publicado por primera vez en 1936, se han vendido 15 millones de ejemplares en todo el mundo. Es un libro clásico sobre las relaciones humanas"
+                </p>
+            </div>
+            <div class="box boxLibro">
+                <h2>Eat pray love</h2>
+                <p>Elizabeth Gilbert</p>
+                <img src="imagenes/eat,pray,love.jpg" alt="" srcset="">
+                <p>Liz Gilbert pensó que tenía todo lo que ella quería en la vida: una casa, un marido y una carrera exitosa. Pero un día descubre que ya no quiere más esa vida, por lo que decide poner fin a su matrimonio y emprender un viaje de autodescubrimiento que la lleva a Italia, India e Indonesia."
+                </p>
+            </div>
+            <div class="box boxLibro">
+                <h2>Sapiens</h2>
+                <p>Yuval Noah Harari</p>
+                <img src="imagenes/sapiens.jfif" alt="" srcset="">
+                <p>"Sapiens. De animales a dioses: Una breve historia de la humanidad es un libro escrito por Yuval Noah Harari, historiador y escritor israelí, publicado originalmente en hebreo en el 2011, y en traducción al inglés, al español y a más de treinta idiomas a partir del 2014.​​​​"
+                </p>
+            </div>
+            
+        </div>
+        <div class="containerSeriesFavoritos contBoxElementos" style="display: none;">
+            <div class="box boxSerie">
+                <h2>Breaking Bad</h2>
+                <p>Vince Gilligan, Michael Slovis, Colin Bucksey, MÁS</p>
+                <img src="imagenes/BreakingBad.jpg" alt="" srcset="">
+                <p>El profesor calmado de química de una secundaria, Walter White cree que su vida no puede ser peor. Su salario apenas le alcanza para sostener a su familia, una situación que no mejora cuando su esposa da a luz y su hijo adolescente sufre de parálisis cerebral, pero Walter queda anonadado cuando se entera que tiene un cáncer terminal. Al concluir que su enfermedad iba a arruinar financieramente a su familia, él toma una decisión desesperada con el fin de ganar más dinero durante el tiempo que le queda y transforma un viejo vehículo de recreación en un laboratorio de matanfetaminas sobre ruedas.</p>
+            </div>
+            <div class="box boxSerie">
+                <h2>Big Mouth</h2>
+                <p>Nick Kroll, Andrew Goldberg, Mark Levin, Jennifer Flackett</p>
+                <img src="imagenes/BigMouth.jpg" alt="" srcset="">
+                <p>Amigos conversan sobre las desventuras de la pubertad y sobre las experiencias de la vida real de los adolescentes en los suburbios de la ciudad de Nueva York.</p>
+            </div>
+            <div class="box boxSerie">
+                <h2>Los Simpson</h2>
+                <p>Matt Groenning</p>
+                <img src="imagenes/TheSimpsons.jpg" alt="" srcset="">
+                <p>La comedia de dibujos animados se centra en una familia que vive en la ciudad de Springfield. La cabeza de la familia Simpson es Homero, quien no es un hombre de familia típico, obrero de una planta nuclear, él hace lo mejor para poder liderar a su familia.</p>
+            </div>
+            <div class="box boxSerie">
+                <h2>Avatar: la leyenda de Aang</h2>
+                <p>Michael Dante DiMartino, Bryan Konietzko</p>
+                <img src="imagenes/avatarTheLastAirbender.jpg" alt="" srcset="">
+                <p>Un chico de 12 años y sus amigos deben usar sus poderes para salvar al mundo del maléfico Señor del Fuego y traer paz para las tres naciones.</p>
+            </div>
+            
+        </div>
+        <div class="containerHobbiesFavoritos contBoxElementos" style="display: none;">
+            <div class="box boxHobbis">
+                <h2>Boxeo</h2>
+                <p></p>
+                <img src="imagenes/boxeo.avif" alt="" srcset="">
+                <p></p>
+            </div>
+            <div class="box boxHobbis">
+                <h2>Tango</h2>
+                <p></p>
+                <img src="imagenes/tango.jpg" alt="" srcset="">
+                <p></p>
+            </div>
+            <div class="box boxHobbis">
+                <h2>Yoga</h2>
+                <p</p>
+                <img src="imagenes/yoga.avif" alt="" srcset="">
+                <p></p>
+            </div>
+            <div class="box boxHobbis">
+                <h2>Guitarra</h2>
+                <p></p>
+                <img src="imagenes/guitarra.jpg" alt="" srcset="">
+                <p></p>
+            </div>
+            
+        </div>
+        <div class="divDivisor">
+            <h1 class="TitdeMI">Tecnologias</h1>
+    </div>
+    <img src="imagenes/csshtmljs.jpg" alt="">
+    
+   
+      
+
+       
+    <footer></footer>
+    <script src="scrips.js"></script>
+</body>
+</html>

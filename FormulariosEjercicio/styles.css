@@ -1,0 +1,28 @@
+body{
+    align-items: center;
+    text-align: center;
+}
+
+.formBox{
+    padding: 3px 15px 15px 15px;
+    border: 3px  dashed rgb(234, 10, 246);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 10px
+   
+}
+.box{
+    width: 100%;
+   
+}
+input:invalid{
+    border-color: red;
+}
+
+.tablaNivel1{
+    display: table;
+    border:  3px solid;
+    height: 100px;
+    width: 15%;
+}

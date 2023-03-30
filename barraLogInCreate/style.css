@@ -1,0 +1,20 @@
+.navBar{
+    background-color: black;
+    display: inline-flex ;
+    width: 70%;
+    margin-left: 30%;
+    
+    
+}
+.formLogin{
+    background-color: aqua;
+    width: 70%;
+    padding: 20px;
+}
+
+.formCreateAccount{
+    background-color: brown;
+    width: 70%;
+    padding: 20px;
+    transition-delay: 1ms;
+}

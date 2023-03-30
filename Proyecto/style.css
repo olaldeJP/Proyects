@@ -1,0 +1,47 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0px;
+}
+
+
+body{
+    background-color: blue;
+}
+
+.navBar{
+
+
+background-color: rgb(65, 165, 42) ;
+height: 85px;
+
+
+}
+
+.aLinks{
+    
+color: black;
+background-color: aliceblue;
+border: solid 10px rgb(128, 0, 115);
+
+
+
+
+
+}
+
+.divImagen{
+
+    background-color: chocolate;
+    height: 500px;
+    align-content: center;
+
+}
+
+.divContenido{
+    height:800px;
+    background-color: turquoise;
+}
+
+.footerInfo{
+height: 200px;
+}

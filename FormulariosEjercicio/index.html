@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="boxLoggin">
+
+            <form class="formBox formBoxLG" action="">
+                <h1>Log in</h1>
+                <label for="emailLg">Email:*</label>
+                <p class="errorTextEmail"style="display: none;color: red;">Error Email</p>
+                <input type="text" name="" id="emailLg" maxlength="15" onblur="checkInputs(event)">
+                <label for="passwordLg">Password</label>
+                <p class="errorTextPassword"style="display: none;color: red;">Error Password</p>
+                <input type="passwordLg" name="passwordLg" id="passwordLg" maxlength="15" onblur="checkInputs(event)">
+                <br><br>
+                <input type="button" onclick="enviar()" value="Log In">
+            </form>
+        </div>
+
+        <div class="boxCreate">
+
+            <form class="formBox" action="" onsubmit="sendCreateAccount(event)"  >
+                <h1>Create Account</h1>
+                <label for="email">Email:*</label>
+                <input type="text" name="" id="email" maxlength="15">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" maxlength="15" >
+               
+                <br><br>
+                <select name="levels" id="">
+                    <option value="level1">level 1</option>
+                    <option value="level2">level 2</option>
+                    <option value="level3">level 3</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Create Aunt"> 
+            </form>
+        </div>
+        <div class="tablaNivel1">
+            <label for="Check0">Check 0</label>
+            <input class="checkBox" type="checkbox" name="" id="" value="" disabled>
+            <label for="Check1">Check 1</label>
+            <input type="checkbox" class="checkBox" name="" id="" disabled>
+            <label for="Check2">Check 2</label>
+            <input type="checkbox" class="checkBox" name="" id="" disabled>
+            <label for="Check3">Check 3</label>
+            <input type="checkbox" class="checkBox" name="" id="" value="" disabled>
+            <label for="Check4">Check 4</label>
+            <input type="checkbox" class="checkBox" name="" id="" disabled>
+            <label for="Check5">Check 5</label>
+            <input type="checkbox" class="checkBox" name="" id="" disabled>
+
+        </div>
+
+    </div>
+
+
+
+
+    </form>
+
+    <script src="scrips.js"></script>
+</body>
+
+</html>
