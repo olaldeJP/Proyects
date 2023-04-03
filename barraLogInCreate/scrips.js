@@ -1,4 +1,0 @@
-
-$(".buttonLogIn").click(function(){
-   
-})
