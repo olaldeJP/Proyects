@@ -93,6 +93,31 @@ section a{
     color: white;
 }
 
+.divsContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+.divCaja{
+    display: flex;
+    padding: 80px 50px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.videoContent{
+    display: flex;
+    margin: 0px 350px 0px 500px;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.videoContent video{
+
+}
+
+
 .footerInfo{
 height: 200px;
 display: flex;
