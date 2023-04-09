@@ -1,3 +1,6 @@
+
+
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: auto 0px;
@@ -105,19 +108,25 @@ section a{
     align-items: center;
     
 }
-.videoContent{
+
+
+.mainVideo{
     display: flex;
-    margin: 0px 350px 0px 500px;
-    align-self: center;
     flex-direction: column;
-    justify-content: center;
-}
-
-.videoContent video{
-
+    align-items: center;
+    padding: 100px 0px;
 }
 
 
+.sectionVideo{
+height: auto;
+width: auto;
+background-color:  #181D31;
+}
+.elVideo{}
+.cajaBotones{
+    align-self: flex-start;
+}
 .footerInfo{
 height: 200px;
 display: flex;

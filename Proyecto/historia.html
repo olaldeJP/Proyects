@@ -9,10 +9,10 @@
 </head>
 <body>  
     <nav class="navBar">
-    <a href="index.html">LINK</a>
+    <a href="index.html">INDEX</a>
     <ul class="ul_elements">
         <li class="li_historia"><a href="historia.html">HISTORIA</a></li>
-        <li class="li_juguemos">JUGUEMOS</li>
+        <li class="li_juguemos"><a href="juguemos.html">JUGUEMOS</a></li>
     </ul>
     </nav>
 <header  class="divImagen" >
@@ -33,7 +33,7 @@
         </div>
     <div class="divCaja">
         <h2>Los primeros lenguajes de programación</h2>
-        <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
+        <p>FormulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
 
             En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.
             El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense
@@ -46,12 +46,18 @@
             Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia</p>
     </div>
 </main>
-<h2>Un breve video para complementar lo visto</h2>
-
-<section class="videoContent">
-   <video src="Imagen/img1.jpg"></video>
-   <button>Play</button>
-   <button>Pause</button>
+<main class="mainVideo">
+    <h2>Un breve video para complementar lo visto</h2>
+    <section class="sectionVideo">
+        <video class="elVideo" poster="Imagen/img-video.jpg">
+            <source src="video/historia-Comp.mp4">
+            <source src="video/historia-Comp.ogv">
+        </video>
+       <div class="cajaBotones">
+        <button class="botonPlay">Play</button>
+        <button class="botonPause">Pause</button>
+    </div>
+</main>
 </section>
 <footer class="footerInfo">
     <div class="footLeft">
@@ -63,4 +69,5 @@
 </div>
 </footer>
 </body>
+<script src="scripVideo.js"></script>
 </html>
