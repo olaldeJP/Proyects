@@ -26,20 +26,38 @@ body{
 
 
 }
+h1{
+    font-size: 56px;
+
+    text-shadow: 2px 2px #808080, 5px 6px  #000000  ;
+}
 
 .ul_elements{
     display: flex;
     justify-content: space-around;
     width: 300px;
-    list-style-type: none;
+  
 
 }
-.ul_elements li{
+.elementLi{
+    list-style-type: none;
+ 
+}
+.elementLi:active{
+    transform: translate(3px,3px);
+    box-shadow: none;
+}
+.ancla{
     padding: 10px ;
-    background-color: #F0F5E4;;
+    text-decoration: none;
+    background-color: #f0e9d2;
     color: black;
     border-radius: 10px;
-    border: solid black;
+    box-shadow: 3px  3px #808080 ;
+}
+.ancla:active{
+    transform: translate(3px,3px);
+    box-shadow:none ;
 }
 
 .aLinks{
@@ -59,9 +77,12 @@ body{
 
 .cont{
     display: flex;
-    justify-content: center;
     width: 100%;
-    color:   rgb(230, 221, 196)
+    justify-content: center;
+    text-shadow: 2px 2px black;
+    color:   #678983;
+    font-size: 40px;
+
 
 }
 
@@ -70,27 +91,32 @@ body{
     height:800px;
     justify-content: space-evenly;
 }
-section {
+
+section .ancla{
+    background-color: #181D31;
+    color: #f0e9d2;
+}
+.sectionBox {
+    display: flex;
     width: 350px;
     height: 400px;
-    background-color:  rgb(230, 221, 196) ;
-    border: solid #504832;
-    display: flex;
+    justify-content: space-evenly; 
     flex-direction: column;
-    justify-content: space-between; 
+    background-color:  rgb(230, 221, 196) ;
+    border:  solid 5px #678983;
     align-items: center;    
 }
-section p{
+.sectionBox p{
+    text-align: center;
     color: black;
 }
 
-section img{
+.sectionBox img{
+    margin: 0;
     width: 350px;
 }
 
-section a{
-
-    border-radius: 15%;
+.sectionBox a{
     padding: 10px 50px;
     background-color:  #181D31;
     color: white;
@@ -103,10 +129,22 @@ section a{
 }
 .divCaja{
     display: flex;
-    padding: 80px 50px;
     justify-content: space-around;
+    padding: 80px 50px;
     align-items: center;
+    gap: 20px;
     
+}
+
+.h2Div{
+    width: 50%;
+    color: #678983;
+    font-size: 36px;
+    text-shadow: 2px 2px black;
+    align-items: center;
+}
+.pDiv{
+    width: 50%;
 }
 
 
@@ -119,13 +157,51 @@ section a{
 
 
 .sectionVideo{
-height: auto;
-width: auto;
-background-color:  #181D31;
+width: 70%;
+background-color:  black;
+border: solid 5px black;
 }
-.elVideo{}
+
+.elVideo{
+    width: 100% ;
+}
+
+
 .cajaBotones{
+    display: flex;
+    background-color: #2a2525;
+
+    height: 50px;
+    align-items: center;
     align-self: flex-start;
+    border-radius: 20px;
+   
+}
+.botonPlay{
+    background: url(Imagen/play.svg) center no-repeat;
+    margin: 0 20px;
+    width: 90px;
+    height: 35px;
+    background-color: #f0e9d2;
+    border-radius: 7px;
+    box-shadow: 2px 2px #808080;
+}
+.botonPlay:active{
+    transform: translate(2px,2px);
+    box-shadow: none;
+}
+.botonPause{
+    
+    background: url(Imagen/pausa.svg) center no-repeat;
+    width: 90px;
+    height: 35px;
+    background-color: #f0e9d2;
+    border-radius: 7px;
+    box-shadow: 2px 2px #808080;   
+}
+.botonPause:active{
+    transform: translate(2px,2px);
+    box-shadow: none;
 }
 .footerInfo{
 height: 200px;
@@ -135,13 +211,23 @@ color: #181D31;;
 justify-content: space-between;
 
 }
+.footerInfo {
+
+
+}
+
 .footerInfo img{
     width: 100px;
+   
 }
 
 .footLeft{
     display: flex;
+    justify-content: space-between;
+    width: 30%;
+
 }
-.footer h2{
-    padding: 0px 20px;
+.footLeft h3{
+    font-size: 1.17em;
+    text-align: center;
 }
