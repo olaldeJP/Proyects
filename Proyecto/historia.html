@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>  
+    <!--  Barra de navegacion superior , donde del estan del lado izquierdo se encuentra el ancla al index, y del lado derecho las dos anclas con referencia a la historia y al juego -->
     <nav class="navBar">
     <a href="index.html">INDEX</a>
     <ul class="ul_elements">
@@ -15,12 +16,14 @@
         <li class="elementLi"><a class="ancla" href="juguemos.html">JUGUEMOS</a></li>
     </ul>
     </nav>
-<header  class="divImagen" >
+<!--En el header se encuentra la imagen fixed-->
+<header  class="headerImagen" >
 
  <h1>HISTORIA DE LA PROGRAMACION</h1>
 
 </header>
-<main class="divsContent">
+<!--Main contenedor que tiene 3 divs en los cuales en cada uno se encuentra un h2 y un p -->
+<main class="mainContent">
     <div class="divCaja">
         <h2 class="h2Div">El principio de la historia de la programación</h2>
         <p class="pDiv">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
@@ -45,6 +48,8 @@
             Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia</p>
     </div>
 </main>
+
+<!--main que contiene el h2 del titulo del video y adentro un section donde se encuentra el video con un div debajo para agregar los botones de play y stop del lado izquierdo, y el tiempo del lado derecho-->
 <main class="mainVideo">
     <h2 class="h2Div">Un breve video para complementar lo visto</h2>
     <section class="sectionVideo">
@@ -52,12 +57,19 @@
             <source src="video/historia-Comp.mp4">
             <source src="video/historia-Comp.ogv">
         </video>
-       <div class="cajaBotones">
+    <div class="botonesTiempo">
+        <div>
         <button class="botonPlay"></button>
         <button class="botonPause"></button>
+        </div>
+        <div class="tiempoVideo">
+        <p>Duracion del Video: <p class="duracion"></p></p>
+       </div>
     </div>
 </main>
 </section>
+
+<!-- pie de la pagina , se encuentra un div posicionada del lado izquierda con el logo y un h3, y del lado derecho otro div con un parrafo-->
 <footer class="footerInfo">
     <div class="footLeft">
     <img src="Imagen/logo.png" alt="">

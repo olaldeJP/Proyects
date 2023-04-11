@@ -14,6 +14,7 @@ body{
 }
 
 
+/*-------- Estilos de la barra de navegacion superior , excepto la clase ancla, que se utilizan tambien en las cajas del index con la imagen, el parrafo y el boton de redireccionamiento ------ */
 
 .navBar{
 
@@ -22,14 +23,6 @@ body{
     justify-content: space-between;
     margin: 0px 40px;
     height: 85px;
-
-
-
-}
-h1{
-    font-size: 56px;
-
-    text-shadow: 2px 2px #808080, 5px 6px  #000000  ;
 }
 
 .ul_elements{
@@ -43,6 +36,7 @@ h1{
     list-style-type: none;
  
 }
+/*  CONSULTA! , el transform:translate en este caso la unica forma que me funciono fue aplicarlo al Li y al ancla(ambos con la subclase active) pero en el caso de las cajas del index que tambien tienen anclas, funciona perfectamente, no entiendo porque */
 .elementLi:active{
     transform: translate(3px,3px);
     box-shadow: none;
@@ -60,13 +54,10 @@ h1{
     box-shadow:none ;
 }
 
-.aLinks{
-    
-    color: black;
-    background-color: aliceblue;
-    }
+/* ------ Estilos del header con la imagen y su titulo--------*/
 
-.divImagen{
+
+.headerImagen{
     display: flex;
     justify-content: center;
     background: url(Imagen/codigo.jpg) fixed;;
@@ -74,6 +65,12 @@ h1{
     background-size: cover;
     
 }
+h1{
+    font-size: 56px;
+    text-shadow: 2px 2px #808080, 5px 6px  #000000  ;
+}
+
+/* --- Estilos de la pagina principal del Index-----*/
 
 .cont{
     display: flex;
@@ -122,11 +119,17 @@ section .ancla{
     color: white;
 }
 
-.divsContent{
+
+/* -------Estilos de pagina Historias--------*/
+
+
+.mainContent{
     display: flex;
     flex-direction: column;
     
 }
+
+/*En esta seccion no estoy seguro si est es la forma correcta de acomodar los divs de las cajas, o si deberia hacer una clase general para los divs, y despues asignarles una clase independiente a cada una para que queden diferentes*/
 .divCaja{
     display: flex;
     justify-content: space-around;
@@ -167,13 +170,13 @@ border: solid 5px black;
 }
 
 
-.cajaBotones{
+.botonesTiempo{
     display: flex;
     background-color: #2a2525;
-
+    justify-content: space-between;
     height: 50px;
     align-items: center;
-    align-self: flex-start;
+   
     border-radius: 20px;
    
 }
@@ -186,10 +189,12 @@ border: solid 5px black;
     border-radius: 7px;
     box-shadow: 2px 2px #808080;
 }
+
 .botonPlay:active{
     transform: translate(2px,2px);
     box-shadow: none;
 }
+
 .botonPause{
     
     background: url(Imagen/pausa.svg) center no-repeat;
@@ -199,20 +204,25 @@ border: solid 5px black;
     border-radius: 7px;
     box-shadow: 2px 2px #808080;   
 }
+
 .botonPause:active{
     transform: translate(2px,2px);
     box-shadow: none;
 }
+.tiempoVideo{
+    display: flex;
+    margin-right: 20px;
+}
+
+/* --------Estilos del pie de la pagina---------- */
+
+
 .footerInfo{
 height: 200px;
 display: flex;
 background-color: #678983;
 color: #181D31;;
 justify-content: space-between;
-
-}
-.footerInfo {
-
 
 }
 
