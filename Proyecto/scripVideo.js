@@ -3,12 +3,14 @@ let video=document.querySelector(".elVideo")
 let duracion=document.querySelector(".duracion");
 
 const mostrarTiempo=()=>{
-
+    
+    let m=((document.querySelector(".elVideo").duration - document.querySelector(".elVideo").currentTime).toFixed(0)/60).toFixed(0)
+    let s=(document.querySelector(".elVideo").duration - document.querySelector(".elVideo").currentTime).toFixed(0)%59
     duracion.textContent= (video.duration - video.currentTime).toFixed(0)+"S";
     
     }
-/* La funcino mostrartiempo() muestra segundo a segundo lo que falta para que termine el video,ademas de los dos eventos de los botones Play y Pause, estuve haciendo diferentes formas para mostrarlo con minutos y segundos pero no tuve mucho tiempo para probarlo y que funcione correctamente, intentare hacerlo para la fecha final, ademas, el cleanInterval tampoco me estaria funcionando , no estoy seguro porque */ 
-
+/* La funcino mostrartiempo() muestra segundo a segundo lo que falta para que termine el video,ademas de los dos eventos de los botones Play y Pause */ 
+/* No puedo hacer que me redondee los minutos exactos, con el toFixed, me lo redonde para arriba, entonces cuando el resultado es <4,5 me lo redondea a 5*/ 
 document.querySelector(".botonPlay").addEventListener("click",function(){
     video.play();
     setInterval(mostrarTiempo,1000);
