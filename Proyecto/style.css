@@ -49,7 +49,7 @@ body{
 }
 .ancla{
     padding: 10px ;
-    text-decoration: none;
+    
     background-color: var(--cremaRecuadros);
     color: black;
     border-radius: 10px;
