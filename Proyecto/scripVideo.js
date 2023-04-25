@@ -1,4 +1,5 @@
 
+/*SCRIP para video */ 
 let video=document.querySelector(".elVideo")
 let duracion=document.querySelector(".duracion");
 

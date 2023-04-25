@@ -10,7 +10,12 @@
 <body>  
     <!--  Barra de navegacion superior , donde del estan del lado izquierdo se encuentra el ancla al index, y del lado derecho las dos anclas con referencia a la historia y al juego -->
     <nav class="navBar">
-    <a href="index.html">INDEX</a>
+    <a href="index.html">      <svg width="200" height="80">
+        <rect class="primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
+        <rect class="segundoMovimiento" x="25" y="10" width="55" height="28" fill="#678983" rx="5"></rect>
+        <polyline class="primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
+        <polyline class="segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="#678983"></polyline>
+    </svg></a>
     <ul class="ul_elements">
         <li class="elementLi"><a class="ancla" href="historia.html">HISTORIA</a></li>
         <li class="elementLi"><a class="ancla" href="juguemos.html">JUGUEMOS</a></li>
@@ -80,5 +85,6 @@
 </div>
 </footer>
 </body>
+<script src="scripAnimacion.js"></script>
 <script src="scripVideo.js"></script>
 </html>

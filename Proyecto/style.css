@@ -36,11 +36,53 @@ body{
     justify-content: space-around;
     width: 300px;
   
+  
 
 }
 .elementLi{
     list-style-type: none;
  
+}
+/*Pagina del Juego*/
+
+/*Animacion de la computadora del comienzo*/
+
+.primerMovimiento{
+    opacity: 0;
+
+}
+.segundoMovimiento{
+   opacity: 0;
+
+ 
+}
+
+@keyframes aparecerExterior{
+    from{
+        transform: translate(0px,-20px);
+        opacity: 0;
+     
+    }
+    to{
+        opacity: 1;
+     
+    }
+}
+@keyframes aparecerInterior{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        transform: translate(0px,-20px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+     
+    }
+}
+.pBox{
+    margin-top: 70%;
 }
 /*  CONSULTA! , el transform:translate en este caso la unica forma que me funciono fue aplicarlo al Li y al ancla(ambos con la subclase active) pero en el caso de las cajas del index que tambien tienen anclas, funciona perfectamente, no entiendo porque */
 .elementLi:active{
@@ -49,10 +91,10 @@ body{
 }
 .ancla{
     padding: 10px ;
-    
     background-color: var(--cremaRecuadros);
     color: black;
     border-radius: 10px;
+    text-decoration: none;
     box-shadow: 3px  3px var(--gris) ;
 }
 .ancla:active{
@@ -219,7 +261,34 @@ border: solid 5px black;
     display: flex;
     margin-right: 20px;
 }
+/*-------------Estilos seccion Juego---------------------*/
+.divsDrop{
+        width: 290px;
+        height: 450px;
+        background-color: var( --gris);
+        margin: 5px 2px;
+        text-align: center;
+        border: solid black 2px;
+        
+}.divsDrop:hover{
+    background-color: #2a2525;
+}
 
+.sectionJuego{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.imgJuego{
+    margin: 10px 10px;
+}
+.botonReinicio{
+    align-items: center;
+    background-color: var(--cremaRecuadros);
+    border-radius: 7px;
+    box-shadow: 2px 2px var(--gris);
+}
 /* --------Estilos del pie de la pagina---------- */
 
 

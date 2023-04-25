@@ -9,7 +9,12 @@
 </head>
 <body>
     <nav class="navBar">
-        <a href="index.html">INDEX</a>
+        <a href="index.html">      <svg width="200" height="80">
+            <rect class="primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
+            <rect class="segundoMovimiento" x="25" y="10" width="55" height="28" fill="darkblue" rx="5"></rect>
+            <polyline class="primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
+            <polyline class="segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="darkblue"></polyline>
+        </svg></a>
         <ul class="ul_elements">
             <li class="elementLi"><a class="ancla" href="historia.html">HISTORIA</a></li>
             <li class="elementLi"><a class="ancla" href="juguemos.html">JUGUEMOS</a></li>
@@ -21,6 +26,20 @@
      <h1>JUGUEMOS UN POCO</h1>
 
 </header>
+<h2 class="h2Div">Armemos el rompecabezas y veamos que imagen es...</h2>
+<main class="juego">
+    <section class="sectionJuego">
+        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+    </section>
+    <section class="sectionJuego">
+    <img class="imagen1 imgJuego" src="Imagen/Rompe2.png" alt="" sizes="" srcset=""  onclick="mover(this)">
+    <img class="imagen2 imgJuego" src="Imagen/Rompe1.png" alt="" sizes="" srcset=""  onclick="mover(this)">
+    <img class="imagen3 imgJuego" src="Imagen/Rompe3.png" alt="" sizes="" srcset=""  onclick="mover(this)">
+    </section> 
+</main>
+    <button class="botonReinicio">REINICIO</button>
     <footer class="footerInfo">
         <div class="footLeft">
         <img src="Imagen/logo.png" alt="">
@@ -29,6 +48,9 @@
     <div>
         <p>Sitio con fines educativos - Creado por Juan Pablo Olalde </p>
     </div>
+
     </footer>
 </body>
+<script src="scripAnimacion.js"></script>
+<script src="scripJuego.js"></script>
 </html>
