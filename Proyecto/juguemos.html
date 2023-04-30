@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">    
-    <title>Document</title>
+    <title>Proyecto Juan Pablo Olalde</title>
 </head>
 <body>
     <nav class="navBar">
         <a href="index.html">      <svg width="200" height="80">
-            <rect class="primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
-            <rect class="segundoMovimiento" x="25" y="10" width="55" height="28" fill="darkblue" rx="5"></rect>
-            <polyline class="primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
-            <polyline class="segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="darkblue"></polyline>
+            <rect class="computadora primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
+            <rect class="computadora  segundoMovimiento" x="25" y="10" width="55" height="28" fill="#678983" rx="5"></rect>
+            <polyline class="computadora primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
+            <polyline class="computadora segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="#678983"></polyline>
         </svg></a>
         <ul class="ul_elements">
             <li class="elementLi"><a class="ancla" href="historia.html">HISTORIA</a></li>
@@ -26,31 +26,21 @@
      <h1>JUGUEMOS UN POCO</h1>
 
 </header>
-<h2 class="h2Div">Armemos el rompecabezas y veamos que imagen es...</h2>
+<h2 class="h2Div h2juego">Armemos el rompecabezas y veamos que imagen es...</h2>
 <main class="juego">
     <section class="sectionJuego">
-        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
-        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
-        <div class="divsDrop" ondrop="soltar(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+        <div id="divBox1" class="divsDrop" ondrop="soltar(event)" ondragover="habilitarDrop(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+        <div id="divBox2" class="divsDrop" ondrop="soltar(event)" ondragover="habilitarDrop(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
+        <div id="divBox3" class="divsDrop" ondrop="soltar(event)" ondragover="habilitarDrop(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
     </section>
-    <section class="sectionJuego">
-    <img class="imagen1 imgJuego" src="Imagen/Rompe2.png" alt="" sizes="" srcset=""  onclick="mover(this)">
-    <img class="imagen2 imgJuego" src="Imagen/Rompe1.png" alt="" sizes="" srcset=""  onclick="mover(this)">
-    <img class="imagen3 imgJuego" src="Imagen/Rompe3.png" alt="" sizes="" srcset=""  onclick="mover(this)">
-    </section> 
+    <section id ="sectionImg"class="sectionJuego">
+    <img id="img2"class="imgJuego" src="Imagen/Rompe2.png" alt="Imagen-Juego" ondragstart="mover(event)">
+    <img id="img1"class="imgJuego" src="Imagen/Rompe1.png" alt="Imagen-Juego" ondragstart="mover(event)">
+    <img id="img3"class="imgJuego" src="Imagen/Rompe3.png" alt="Imagen-Juego" ondragstart="mover(event)">
+   
+                   
 </main>
-    <button class="botonReinicio">REINICIO</button>
-    <footer class="footerInfo">
-        <div class="footLeft">
-        <img src="Imagen/logo.png" alt="">
-        <h2>PROGRAMACION E HISTORIA</h2>
-    </div>
-    <div>
-        <p>Sitio con fines educativos - Creado por Juan Pablo Olalde </p>
-    </div>
-
-    </footer>
-</body>
+    <button class="boton botonReiniciar" onclick="reiniciar()">Reiniciar</button>
 <script src="scripAnimacion.js"></script>
 <script src="scripJuego.js"></script>
 </html>

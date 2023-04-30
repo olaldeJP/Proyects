@@ -47,15 +47,11 @@ body{
 
 /*Animacion de la computadora del comienzo*/
 
-.primerMovimiento{
+.computadora{
     opacity: 0;
-
 }
-.segundoMovimiento{
-   opacity: 0;
 
- 
-}
+
 
 @keyframes aparecerExterior{
     from{
@@ -188,7 +184,8 @@ section .ancla{
 }
 
 .h2Div{
-    width: 50%;
+    display: flex;
+    justify-content: center;
     color: var(--sombraVerde);
     font-size: 36px;
     text-shadow: 2px 2px black;
@@ -196,6 +193,9 @@ section .ancla{
 }
 .pDiv{
     width: 50%;
+}
+.pdiv3{
+    width: 130%;
 }
 
 
@@ -216,29 +216,32 @@ border: solid 5px black;
 .elVideo{
     width: 100% ;
 }
-
-
-.botonesTiempo{
-    display: flex;
-    background-color: #2a2525;
-    justify-content: space-between;
-    height: 50px;
-    align-items: center;
-   
-    border-radius: 20px;
-   
-}
-.botonPlay{
-    background: url(Imagen/play.svg) center no-repeat;
-    margin: 0 20px;
+.boton{
     width: 90px;
     height: 35px;
     background-color: var(--cremaRecuadros);
     border-radius: 7px;
     box-shadow: 2px 2px var(--gris);
+ 
 }
 
-.botonPlay:active{
+.barraVideo{
+    display: flex;
+    background-color: #2a2525;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+.botonPlay{
+
+    background: url(Imagen/play.svg) center no-repeat;
+    background-color:  var(--cremaRecuadros);
+    margin: 0 20px;
+}
+
+.boton:active{
     transform: translate(2px,2px);
     box-shadow: none;
 }
@@ -246,14 +249,12 @@ border: solid 5px black;
 .botonPause{
     
     background: url(Imagen/pausa.svg) center no-repeat;
-    width: 90px;
-    height: 35px;
-    background-color: var(--cremaRecuadros) ;
+    background-color:  var(--cremaRecuadros);
     border-radius: 7px;
-    box-shadow: 2px 2px var(--gris);   
+
 }
 
-.botonPause:active{
+.boton:active{
     transform: translate(2px,2px);
     box-shadow: none;
 }
@@ -262,9 +263,12 @@ border: solid 5px black;
     margin-right: 20px;
 }
 /*-------------Estilos seccion Juego---------------------*/
+.h2juego{
+    margin-top: 150px;
+}
 .divsDrop{
-        width: 290px;
-        height: 450px;
+        width:  260px;
+        height:  450px;
         background-color: var( --gris);
         margin: 5px 2px;
         text-align: center;
@@ -274,20 +278,28 @@ border: solid 5px black;
     background-color: #2a2525;
 }
 
+.divsDrop img{
+    margin: 0 ;
+}
 .sectionJuego{
     display: flex;
     justify-content: center;
     flex-direction: row;
+   
 }
 
 .imgJuego{
     margin: 10px 10px;
+    width:  260px;
+    height:  450px;
 }
-.botonReinicio{
+
+.botonReiniciar{
+    width: 250px;
     align-items: center;
-    background-color: var(--cremaRecuadros);
-    border-radius: 7px;
-    box-shadow: 2px 2px var(--gris);
+    margin: 50px 50% 50px 43%;
+
+
 }
 /* --------Estilos del pie de la pagina---------- */
 
@@ -310,9 +322,13 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     width: 30%;
+    margin-left: 40px;
 
 }
 .footLeft h3{
     font-size: 1.17em;
     text-align: center;
+}
+.footerP{
+    margin-right: 50px;
 }
