@@ -11,7 +11,6 @@ const mostrarTiempo=()=>{
     
     }
 /* La funcino mostrartiempo() muestra segundo a segundo lo que falta para que termine el video,ademas de los dos eventos de los botones Play y Pause */ 
-/* No puedo hacer que me redondee los minutos exactos, con el toFixed, me lo redonde para arriba, entonces cuando el resultado es <4,5 me lo redondea a 5*/ 
 document.querySelector(".botonPlay").addEventListener("click",function(){
     video.play();
     setInterval(mostrarTiempo,1000);

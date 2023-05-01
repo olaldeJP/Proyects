@@ -8,13 +8,17 @@
     <title>Proyecto Juan Pablo Olalde</title>
 </head>
 <body>
+    <!-- Barra de navegacion superior , donde del lado izquierdo se encuentra el svg de la computadora , y del lado derecho las dos anclas con referencia a la historia y al juego -->
+  
     <nav class="navBar">
-        <a href="index.html">      <svg width="200" height="80">
-            <rect class="computadora primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
-            <rect class="computadora  segundoMovimiento" x="25" y="10" width="55" height="28" fill="#678983" rx="5"></rect>
-            <polyline class="computadora primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
-            <polyline class="computadora segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="#678983"></polyline>
-        </svg></a>
+        <a href="index.html">      
+            <svg width="200" height="80">
+                <rect class="computadora primerMovimiento"x="15" y="5" width="75" height="38" fill="#E6DDC4" rx="5" ></rect>
+                <rect class="computadora  segundoMovimiento" x="25" y="10" width="55" height="28" fill="#678983" rx="5"></rect>
+                <polyline class="computadora primerMovimiento" points="24,48 6,68 100,68 82,48" fill="#E6DDC4"></polyline> 
+                <polyline class="computadora segundoMovimiento" points="27,51 16,63 90,63 79,51" fill="#678983"></polyline>
+            </svg>
+        </a>
         <ul class="ul_elements">
             <li class="elementLi"><a class="ancla" href="historia.html">HISTORIA</a></li>
             <li class="elementLi"><a class="ancla" href="juguemos.html">JUGUEMOS</a></li>
@@ -27,6 +31,9 @@
 
 </header>
 <h2 class="h2Div h2juego">Armemos el rompecabezas y veamos que imagen es...</h2>
+
+<!-- Main donde se encuentran 2 section en donde en uno estan los 3 divs que van a contener los eventos para soltar las imagenes, y las 3 imagenes para jugar  -->
+
 <main class="juego">
     <section class="sectionJuego">
         <div id="divBox1" class="divsDrop" ondrop="soltar(event)" ondragover="habilitarDrop(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
@@ -34,13 +41,14 @@
         <div id="divBox3" class="divsDrop" ondrop="soltar(event)" ondragover="habilitarDrop(event)"><p class="pBox">Arrastre y suelte la imágene aquí</p></div>
     </section>
     <section id ="sectionImg"class="sectionJuego">
-    <img id="img2"class="imgJuego" src="Imagen/Rompe2.png" alt="Imagen-Juego" ondragstart="mover(event)">
-    <img id="img1"class="imgJuego" src="Imagen/Rompe1.png" alt="Imagen-Juego" ondragstart="mover(event)">
-    <img id="img3"class="imgJuego" src="Imagen/Rompe3.png" alt="Imagen-Juego" ondragstart="mover(event)">
-   
+        <img id="img2"class="imgJuego" src="Imagen/Rompe2.png" alt="Imagen-Juego" ondragstart="mover(event)">
+        <img id="img1"class="imgJuego" src="Imagen/Rompe1.png" alt="Imagen-Juego" ondragstart="mover(event)">
+        <img id="img3"class="imgJuego" src="Imagen/Rompe3.png" alt="Imagen-Juego" ondragstart="mover(event)">
+    </section>
                    
 </main>
-    <button class="boton botonReiniciar" onclick="reiniciar()">Reiniciar</button>
+    <button class="boton botonReiniciar" onclick="reiniciar()">Reiniciar 
+    </button>
 <script src="scripAnimacion.js"></script>
 <script src="scripJuego.js"></script>
 </html>

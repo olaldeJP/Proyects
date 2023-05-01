@@ -1,3 +1,5 @@
+/*Scrips del juego */
+
 const imagenes=document.querySelectorAll(".imgJuego")
 
 
