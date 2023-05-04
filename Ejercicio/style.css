@@ -1,0 +1,24 @@
+.cubosA{
+    width: 500px;
+    height: 500px;
+    display: flex;
+background-color: aqua;
+}
+.cubos-violetas{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border: 1px solid darkmagenta;
+}
+
+.cuboA{
+    order:  3 ;
+}
+.cuboB{
+    order:  2 ;
+}
+.cuboC{
+   transform: rotatex();
+   
+}
