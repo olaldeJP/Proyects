@@ -80,7 +80,6 @@ body{
 .pBox{
     margin-top: 70%;
 }
-/*  CONSULTA! , el transform:translate en este caso la unica forma que me funciono fue aplicarlo al Li y al ancla(ambos con la subclase active) pero en el caso de las cajas del index que tambien tienen anclas, funciona perfectamente, no entiendo porque */
 .elementLi:active{
     transform: translate(3px,3px);
     box-shadow: none;

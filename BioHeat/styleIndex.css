@@ -1,0 +1,182 @@
+* {
+   margin: auto 0px;
+   
+}
+body{
+    background-color: white;
+}
+
+/*ESTILOS BARRA DE NAVEGACION SUPERIOR*/
+.navBar{
+    display: flex;
+    height: 125px;
+    position: relative;
+    justify-content: space-evenly;
+ }
+.botonesIdioma-Tema{
+    display: grid;
+    width:200px;
+    height: 110px;
+    align-content: start;
+    
+}
+.es-in{
+   justify-self: end;
+}
+.sectionBotonesMenu{
+    display: flex;
+    justify-content: flex-end;
+    width:700px;
+    margin-right: 0px;
+}
+
+.botonHamburguesa{
+    padding: 20px 25px 20px 25px;
+    border: solid 2px  rgba(251, 164, 3, 0.923);
+    background-color: rgb(51, 92, 51);
+    border-radius: 30px;
+    box-shadow: 3px 3px rgba(48, 46, 46, 0.455);
+}
+
+.botonHamburguesa:active{
+    transform: translate(2px,2px);
+    box-shadow: none;
+}
+
+
+.ulBox{
+
+   display: none;
+   align-self: flex-end;
+   border-radius: 10px;
+   padding: 30px 0px 30px 30px;
+   height: 20px;
+
+ 
+}
+
+.liC{
+    padding: 0px 45px 0px 5px;
+    list-style-type: none;
+    opacity: 1;
+   
+}
+/*ANIMACION BOTONES HAMBURGUESA*/
+
+/*
+@keyframes desplegarMenuHamburguesa{
+    0%{
+       width: 0px;
+    }
+    100%{
+        opacity: 1;
+        width: 500px;
+    }
+
+}
+
+@keyframes guardarMenuHamburguesa{
+    0%{
+        opacity: 1;
+        width: 500px;
+    }
+    100%{
+        width: 0;
+        opacity: 0;
+    }
+
+}
+@keyframes mostrarLi{
+   
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+
+@keyframes ocultarLi{
+    0%{
+        opacity: 0.8;
+    }
+    10%{
+        opacity: 0;
+    }
+}
+*/
+
+.ancla{
+    color: black;
+    text-decoration: none;
+}
+
+.ancla:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+.botonLenguaje{
+    border: none;
+
+}
+.botonLenguaje:hover{
+    background-color: grey;
+}
+/*ESTILOS MEDIO */
+
+.boxFuego{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: chocolate;
+    font-size: 30px;
+
+    
+}
+.texto{
+    
+    text-align: center;
+    width: 80%;
+    color: aliceblue;
+    
+}
+
+.botonBoxFuego{
+    width: 280px;
+    height: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.botonBoxFuego:hover{
+    transition: all 0.5s;
+    background-color: rgba(73, 91, 42, 0.723);
+}
+
+.section1-main2 pre{
+    font-size: 20px;
+}
+
+
+
+.section2-main2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boxInformacion{
+    display: grid;
+    justify-items: center;
+    border: solid 1px black;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+.boxInformacion h3{
+    justify-self: end;
+}
