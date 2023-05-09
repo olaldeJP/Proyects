@@ -3,11 +3,11 @@
 let video=document.querySelector(".elVideo")
 let duracion=document.querySelector(".duracion");
 
+/*Funcion que , por medio del calculo matematico DuracionDelVideo - TiempoActual, muestra el tiempo faltante para que termine */
+
 const mostrarTiempo=()=>{
     
-    let m=((document.querySelector(".elVideo").duration - document.querySelector(".elVideo").currentTime).toFixed(0)/60).toFixed(0)
-    let s=(document.querySelector(".elVideo").duration - document.querySelector(".elVideo").currentTime).toFixed(0)%59
-    duracion.textContent= (video.duration - video.currentTime).toFixed(0)+"S";
+   duracion.textContent= (video.duration - video.currentTime).toFixed(0)+"S";
     
     }
 /* La funcino mostrartiempo() muestra segundo a segundo lo que falta para que termine el video,ademas de los dos eventos de los botones Play y Pause */ 
