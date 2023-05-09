@@ -64,4 +64,5 @@ const imagenes=document.querySelectorAll(".imgJuego")
     <img id="img1"class="imgJuego" src="Imagen/Rompe1.png" alt="Imagen-Juego" ondragstart="mover(event)">
     <img id="img3"class="imgJuego" src="Imagen/Rompe3.png" alt="Imagen-Juego" ondragstart="mover(event)">
     </section> 
-    `;}
+    `;
+}
