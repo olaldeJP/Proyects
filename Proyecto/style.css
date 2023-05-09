@@ -47,34 +47,22 @@ body{
 
 /*Animacion de la computadora del comienzo*/
 
-.computadora{
+
+.primerMovimiento{
     opacity: 0;
+    animation: movimientoComputadora 2s forwards;
 }
-
-
-
-@keyframes aparecerExterior{
-    from{
-        transform: translate(0px,-20px);
-        opacity: 0;
-     
-    }
-    to{
-        opacity: 1;
-     
-    }
+.segundoMovimiento{
+    opacity: 0;
+    animation: movimientoComputadora 3.5s forwards;
 }
-@keyframes aparecerInterior{
+@keyframes movimientoComputadora{
     0%{
-        opacity: 0;
-    }
-    40%{
-        transform: translate(0px,-20px);
-        opacity: 0;
+        transform: translateY(-40px);
     }
     100%{
+        transform: translateY(0px);
         opacity: 1;
-     
     }
 }
 .pBox{
