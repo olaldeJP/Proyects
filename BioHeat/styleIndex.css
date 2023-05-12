@@ -10,7 +10,8 @@ body{
 .navBar{
     display: flex;
     height: 125px;
-    position: relative;
+    background-color: white;
+    width: 100%;
     justify-content: space-evenly;
  }
 .botonesIdioma-Tema{
@@ -47,14 +48,12 @@ body{
 
 
 .ulBox{
-
-   display: none;
+   display: flex;
+   opacity: 0;
    align-self: flex-end;
    border-radius: 10px;
    padding: 30px 0px 30px 30px;
    height: 20px;
-
- 
 }
 
 .liC{
@@ -65,31 +64,39 @@ body{
 }
 /*ANIMACION BOTONES HAMBURGUESA*/
 
-/*
+
 @keyframes desplegarMenuHamburguesa{
     0%{
-       width: 0px;
+        
+        transform: translateX(30px);
+        
     }
     100%{
+        
+        transform: translateX(0px);
         opacity: 1;
-        width: 500px;
+   
     }
 
 }
 
 @keyframes guardarMenuHamburguesa{
     0%{
+        transform: translateX(0px);
         opacity: 1;
-        width: 500px;
     }
+
     100%{
-        width: 0;
+        transform: translateX(30px);
         opacity: 0;
+        
     }
 
 }
 @keyframes mostrarLi{
    
+
+    
     95%{
         opacity: 0;
     }
@@ -97,7 +104,6 @@ body{
         opacity: 0.8;
     }
 }
-
 @keyframes ocultarLi{
     0%{
         opacity: 0.8;
@@ -106,7 +112,6 @@ body{
         opacity: 0;
     }
 }
-*/
 
 .ancla{
     color: black;
@@ -150,7 +155,6 @@ body{
 .botonBoxFuego{
     width: 280px;
     height: 50px;
-    margin-right: 50px;
     border-radius: 5px;
 }
 
@@ -168,6 +172,7 @@ body{
 .section2-main2{
     display: flex;
     justify-content: center;
+    gap: 30px;
     
 }
 
@@ -178,7 +183,88 @@ body{
     text-align: center;
     width: 300px;
     height: 350px;
+    
 }
 .boxInformacion h3{
     justify-self: end;
+}
+
+/* SECCION ESTILOS COMPRA */
+
+.mainCompra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;;
+    width: 100%;
+
+}
+.selectionCanasto{
+    display: flex;
+    justify-content: end;  
+    width: 80%;
+    height: 100px;
+   
+}
+
+.circulo{
+    background-color:coral;
+    width: 30px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.sectionCompra{
+    display: flex;
+    justify-content: space-between;
+   justify-self: center;
+    width: 80%;
+   
+    gap: 40px;
+}
+
+
+
+.card{
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    background: linear-gradient(#66cd1f, #03210a);
+    border: solid 5px #ffffff;
+    height: 600px;
+ 
+
+}
+.card:hover{
+    border: solid 5px #ff9e03;
+}
+
+
+
+
+/* Estilos Logo y Texto despues de la compra*/
+.sectionLogoYTexto{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    margin-left:127px;
+}
+.divTextoNextImg{
+    display: grid;
+    width: 50%;
+    height: 300px;
+    margin-left: 160px;
+    text-align: center;
+    align-items: center;
+
+}
+.elEquipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 303px;
+
 }
