@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --amarillo: #f4ba1a;
+  --azulFlecha: #3a82b3;
+  --negro: #000000;
+}
+.contenedor {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  opacity: 1;
+}
+.mostrar {
+  opacity: 1;
+}
