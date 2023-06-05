@@ -70,8 +70,10 @@ function restarProducto(event){
         
          alert("ERROR");
    }
+      
 if(circuloCompra.textContent=="0"){
       circuloCompra.style="opacity:0"
+     
    }
 }
 
@@ -108,4 +110,9 @@ function aumentarcarro(event){
 
 }
 
-
+ 
+ 
+ 
+ 
+ 
+ 
