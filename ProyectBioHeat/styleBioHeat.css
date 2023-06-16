@@ -1,7 +1,8 @@
 
 :root{
-    --fondoBody:#24761c8c;
-    --colorLetra:  #094317;;
+    --fondoBody:#54a34d8c;
+    --colorLetra:  #094317;
+    --colorBoton: #093318;
     --cremaVerde: #c0efbf;
 }
 
@@ -9,21 +10,32 @@ body{
     background-color: var(--fondoBody);
 }
 .navbar{
-    height: 100px;
-    background-color: white;
-}
-.p-5{
-    padding-right: 150px !important;
+    height: 115px;
+    background-color: rgb(255, 255, 255);
 }
 
-
-.mainFirst{
-    margin-top: 100px;
+ul{
+    background-color:rgb(255, 255, 255);
 }
 
+.btn-success{
+    
+    background-color: var(--colorBoton);
+}
+.btn-success:hover{
+    background-color: var(--fondoBody);
+    color: var(--colorBoton);
+}
+.btn-outline-success{
+    color: var(--colorBoton);
+}
+.btn-outline-success:hover{
+    background-color: var(--colorBoton);
+    color: white;
+}
 .mainSecond{
-    height: 600px;
-    margin-top: 100px;
+   height:fit-content;
+  
 }
 
 .boxProduct{
@@ -31,21 +43,39 @@ body{
     height: 500px;
 }
 
-.mainThirth{
-    margin-top: 150px;
-}
-.mainFourth{
-    margin-top: 150px;
-}
-.mainFifth {
-    margin-top: 150px;
+.paddingTop{
+    padding-top: 130px;
 }
 
-.mainSixth{
-    margin-top: 100px;
-}
 #mensaje{
     height: 200px ;
+}
+
+.card{
+    background-color: var(--cremaVerde);
+}
+
+.img4{
+    width: 316px auto;
+    height: 319px;
+}
+.imgC{
+    width: 520px;
+    height: 360px;
+}
+.paddingEquipo{
+    padding-top: 200px auto;
+}
+.carousel{
+    width: 600px;
+    height: 550px;
+}
+.botonForm{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10%;
+    background-color: var(--cremaVerde);
 }
 footer{
     background-color: white;
