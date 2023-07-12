@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+
+.sectionCarrusel{
+    background-color: blue;
+    width: 50%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.imgC{
+    width: 250px;
+    height: 250px;
+}
+.card{
+    display: grid;
+    margin: 50px;
+}
+footer{
+    background-color: blueviolet;
+    height: 250px;
+}
