@@ -1,0 +1,42 @@
+.claseFlex{
+    display: flex;
+}
+
+.claseSpaceBetween{
+    justify-content: space-between;
+}
+
+.navBar{
+    background-color: aqua;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.ulNav{
+    margin: 10px 10px 10px 10px;
+}
+
+.liNav{
+
+    border-radius: 35%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px 10px 5px 10px;
+    font-size: 35px;
+    list-style-type: none;
+}
+
+.liNav:hover{
+    border: solid 2px rgb(13, 20, 54);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.formulario{
+    justify-content: center;
+    background-color: blue;
+}

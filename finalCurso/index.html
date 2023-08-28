@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML y CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <nav class="navBar claseFlex">
+        <div class="imgLogo">
+            <img src="" alt="logo">
+        </div>
+        <div>
+            <ul class="ulNav claseFlex">
+                <li class="liNav">   
+                    <a href="">uno</a>
+                </li>
+                <li class="liNav">
+                    <a href="">dos</a>
+                </li>
+                <li class="liNav">
+                    <a href="">tres</a>
+                </li>
+                <li class="liNav">
+                    <a href="">cuatro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sectionInfo claseFlex claseSpaceBetween">
+        <div>
+            <img src="" alt=" imagen">
+        </div>
+        <div>
+            <p> Aca va un parrafo hermoso  </p>
+        </div>
+    </section>
+
+    <section class="sectionInfo claseFlex claseSpaceBetween">
+    
+        <div>
+             <ul class="">
+                <li>   
+                    <p>un Texto</p>
+                </li>
+                <li>
+                    <p>un Texto</p>
+                </li>
+                <li>
+                    <p>un Texto</p>
+                </li>
+                <li>
+                    <p>un Texto</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="" alt=" imagen">
+        </div>
+    </section>
+
+    <section class="formulario claseFlex">
+            <form action="https://formspree.io/f/mlekqneq" method="post">       
+                <div>  
+                    <label class="form-label" for="nombre">Nombre*</label>
+                    <input class="form-control" type="nombre" name="nombre" id="" placeholder="Indique su nombre" 
+                    minlength="3" maxlength="20" size="20" required>
+                </div>
+                <div class="">
+                    <label class="form-label" for="Correo Electronico">Correo Electronico*</label>
+                    <input class="form-control" type="email" name="correoElectronico" id=""  placeholder="ejemplo@dominio.com" minlength="10" maxlength="25" size="25" required>
+                </div>
+                <div>  
+                    <label class="form-label" for="Telefono">Telefono</label>
+                    <input class="form-control" type="tel" name="telefono" id="" placeholder="Indique su numero telefonico" >
+                </div>
+                <div class="">
+                    <label class="form-label" for="empresa">Empresa</label>
+                    <input class="form-control" type="text" name="empresa" id=""
+                    size="25" placeholder="Indique si es una empresa o particular">
+                </div>
+                <div class="">
+                    <label class="form-label" for="mensaje">Mensaje*</label>
+                    <textarea class="form-control"name="mensaje" id="mensaje" cols="20" rows="8" placeholder="Mensaje..." required>
+
+                    </textarea> 
+                </div>
+                <input class="btn btn-outline-success mt-2"type="submit" value="Enviar" ">
+            </form>
+    </section>
+
+    <footer>
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
