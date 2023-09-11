@@ -10,94 +10,113 @@
  
     <nav class="navBar claseFlex">
         <div class="imgLogo">
-            <img src="" alt="logo">
+            <a href="index.html"><img src="imagenes/logo.png" alt="logo" width="138px"></a>
         </div>
+        <div class="colorCeleste">  <h2 > PC TECH </h2></div>
         <div>
             <ul class="ulNav claseFlex">
                 <li class="liNav">   
-                    <a href="">uno</a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li class="liNav">
-                    <a href="">dos</a>
+                    <a href="#servicios">Servicios</a>
                 </li>
                 <li class="liNav">
-                    <a href="">tres</a>
+                    <a href="#consulta">Consultas</a>
                 </li>
                 <li class="liNav">
-                    <a href="">cuatro</a>
+                    <a href="#footer">Informacion</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <br><br><br>
+    <p class="claseFlex claseSpaceCenter marginTop"> Ofrecemos visitas a domicilio para la comodidad del cliente</p> <br> <br> <br>
+    <p class="claseFlex claseSpaceCenter"> El mejor servicio de reparación , mantenimiento de computadoras, notebooks, celulares,impresoras y consolas de videojuegos.</p>
+     <div class="claseFlex claseSpaceCenter">
+            <img src="imagenes/imagen1.jpg" alt="imagen1" width="70%">
+     </div>
 
-    <section class="sectionInfo claseFlex claseSpaceBetween">
-        <div>
-            <img src="" alt=" imagen">
-        </div>
-        <div>
-            <p> Aca va un parrafo hermoso  </p>
-        </div>
-    </section>
-
-    <section class="sectionInfo claseFlex claseSpaceBetween">
+    <section id="servicios" class="sectionInfo claseFlex claseSpaceCenter ">
     
-        <div>
+        <div class="marginTop">
              <ul class="">
                 <li>   
-                    <p>un Texto</p>
+                    <p> Reparacion de Notebooks / CPU / All in One</p>
                 </li>
                 <li>
-                    <p>un Texto</p>
+                    <p> Telefonia Celular </p>
                 </li>
                 <li>
-                    <p>un Texto</p>
+                    <p>Mantenimiento por Acceso Remoto</p>
                 </li>
                 <li>
-                    <p>un Texto</p>
+                    <p>Recuperacion de archivos eliminados</p>
                 </li>
+                <li>
+                    <p>Instalaciones de Impresoras en red </p>
+                </li>
+                <li>
+                    <p>Software de Diseño - Arquitectura - Oficina - Gaming </p>
+                </li>
+                <li>
+                    <p>Insumos</p>
+                </li>
+                <li>
+                    <p> Limpieza y Mantenimiento de PS3 , PS4 , Xbox 360 , Xbox One </p>
+                </li>
+         
             </ul>
         </div>
-        <div>
-            <img src="" alt=" imagen">
+     
+    </section>
+
+    <section class="claseFlex claseSpaceCenter">
+        <img  id=""  src="imagenes/imagen2.jpg" alt="imagen2" > 
+    </section>
+
+    <div class="centrarTexto ">
+        <p> Desde nuestro taller en la ciudad de La Plata, nos dedicamos a reparar todo tipo de equipos electronicos , explicando paso a paso el procedimiento y asi brindarle al cliente una mayor vida util del equipo a reparar. Contando con un servicio 24/7 de monitoreo para su tranqulidad</p>
+    </div>
+        
+
+    <h2 id="consulta" class="claseFlex colorCeleste"> Ponte en contacto con Nosotros</h2>
+
+
+    <section  class="formulario claseFlex marginTop">
+
+        <div class="claseFlex  divForm">           
+        <form action="https://formspree.io/f/mlekqneq" method="post">
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>  
+            
+            <input class="botonForm" type="submit" value="Enviar">
+            
+        </form>
+       </div> 
+    </section>
+
+    <div class="claseFlex claseSpaceCenter">
+            <img src="imagenes/logo.png" alt="logo" width="30%" >
+    </div>
+
+    <footer id="footer" class="claseFlex claseSpaceBetween">
+        <div class="claseFlex">
+                <a class="margen" href="https://www.instagram.com/pctech.lp/"><img src="imagenes/instagram.png" alt="iconoInstagram" width="70px"></a>
+                <a class="margen" href="https://api.whatsapp.com/send?phone=+542216705668&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de"> <img src="imagenes/whatsapp.png" alt="iconoWhatsapp" width="70px"></a>
+                <a class="margen" href="mailto:jsv.techlp@gmail.com"><img src="imagenes/correo.png" alt="iconoEmail"width="80px"></a>
         </div>
-    </section>
-
-    <section class="formulario claseFlex">
-            <form action="https://formspree.io/f/mlekqneq" method="post">       
-                <div>  
-                    <label class="form-label" for="nombre">Nombre*</label>
-                    <input class="form-control" type="nombre" name="nombre" id="" placeholder="Indique su nombre" 
-                    minlength="3" maxlength="20" size="20" required>
-                </div>
-                <div class="">
-                    <label class="form-label" for="Correo Electronico">Correo Electronico*</label>
-                    <input class="form-control" type="email" name="correoElectronico" id=""  placeholder="ejemplo@dominio.com" minlength="10" maxlength="25" size="25" required>
-                </div>
-                <div>  
-                    <label class="form-label" for="Telefono">Telefono</label>
-                    <input class="form-control" type="tel" name="telefono" id="" placeholder="Indique su numero telefonico" >
-                </div>
-                <div class="">
-                    <label class="form-label" for="empresa">Empresa</label>
-                    <input class="form-control" type="text" name="empresa" id=""
-                    size="25" placeholder="Indique si es una empresa o particular">
-                </div>
-                <div class="">
-                    <label class="form-label" for="mensaje">Mensaje*</label>
-                    <textarea class="form-control"name="mensaje" id="mensaje" cols="20" rows="8" placeholder="Mensaje..." required>
-
-                    </textarea> 
-                </div>
-                <input class="btn btn-outline-success mt-2"type="submit" value="Enviar" ">
-            </form>
-    </section>
-
-    <footer>
-        <section>
-            <div>
-                <img src="" alt="">
-            </div>
-        </section>
+        <div>
+                 <a href="https://www.google.com.ar/maps/place/La+Plata,+Provincia+de+Buenos+Aires/@-34.9165191,-57.9775448,13z/data=!4m6!3m5!1s0x95a2e62b1f0085a1:0xbcfc44f0547312e3!8m2!3d-34.9204948!4d-57.9535657!16zL20vMDIzYjk3?entry=ttu"> <img src="imagenes/mapa.png" alt="mapa" width="30%"></a>
+         </div>
+    
     </footer>
 </body>
 </html>
