@@ -32,24 +32,48 @@ body{
 .marginTop{
     margin-top: 90px;
 }
+
 .navBar{
     position: fixed;
     background-color: var(--fondoVar);
     height: 100px;
-    width: 100%;
-    top: 0%;
-    
+    width: 100%;  top: 0%;
     margin-bottom: 0px;
     justify-content: space-between;
 }
+.imagenLogo{
+    width:138px;
+}
+.menu-hamburguesa{
+    display: none;
+}
 
-.ulNav{
-    margin: 10px 10px 10px 10px;
+.pctech{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif0;
+    font-size: 40px;
+    margin-top: 5px;
 }
 
 
-.colorCeleste{
-    color: var(--celeste);
+.ulNav{
+    
+    margin: 10px 10px 10px 10px;
+    
+}
+#hamb{
+    display: none;
+}
+
+
+
+
+.ulNav{
+    padding-left: 0px;
+}
+
+.divP{
+    margin-top: 150px;
 }
 p{
     color: var(--celeste);
@@ -75,15 +99,31 @@ h2{
     transform: translate(3px,3px);
     box-shadow:none ;
  }
-
+ .textF{
+    font-size: 30px;
+ }
 a{
     text-decoration: none;
     color: var(--celeste);
 }
 
 h2{
-
-        font-size: 50px;
+    font-size: 30px;
+}
+.sectionTarjetas{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tarjeta{
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid black;
+    padding: 60px 40px 60px 40px;
+    margin: 10px 10px 10px 10px;
+}
+.imgTarjeta{
+    width: 150px;
 }
 
 .divParrafo{
@@ -91,13 +131,17 @@ h2{
     margin-left: 350px;
 }
 
-#imagen2{
-    margin-left: 150px;
+.imagen2{
+    width: 80%;
 }
 #imagen3{
     margin-left: 550px;
 }
-
+.pBox{
+    font-size: 30px;
+    color: black;
+    
+}
 .formulario{
    justify-content: center;
    width: 100%;
@@ -114,6 +158,11 @@ h2{
     width: 650px;
     background-color: #3b3ec0aa;;
 }
+
+.imagen1{
+    width:70%;
+}
+
 .botonForm{
     background-color: rgb(45, 56, 207);
     width: 100px;
@@ -122,15 +171,58 @@ h2{
     border-radius: 4px;
     border-color: black;
 }
-#footer{
-    background-color:#0f1bc5b5;
-    height: 200px;
+.imagenLogo2{
+    width:30%; 
 }
 
-.iconos{
- height: 400px;
+
+
+footer{
+    background-color:#0f1bc5b5;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+ 
 }
-.margen{
+.iconosContact{
+    width:40%;
+    padding: 20px 20px 20px 20px;
+}
+
+@media( max-width:1100px) {
+    #hamb:checked+ul{
+        display: block;
+    }
+    .ulNav{
+        display: none;
+        background-color: #100b5e;
+        width: 100%;
+        padding-bottom: 20px;
+        border: 3px solid black;
+    }
+    .menu-hamburguesa{
+        display: block;
+        width: 90px;
+        margin-left: 25px;
+        margin-right: 150px;
+    }
+    .sectionTarjetas{
+        flex-direction: column;
+    }
+    .tarjeta{
     margin-top: 30px;
-    margin-left: 45px;
+    padding: 20px 0px 20px 0px;
+    }
+    
+}
+
+@media (max-width:590) {
+
+    .sectionTarjetas{
+        width: 100%;
+    }
+    .iconosContact{
+        width: 20px;
+    }
+   
 }
