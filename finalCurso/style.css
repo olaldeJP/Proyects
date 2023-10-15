@@ -85,7 +85,7 @@ h2{
 }
 
 .liNav{
-    
+
     box-shadow: 3px 3px var(--celeste);
     border-radius: 35%;
     margin-left: 30px;
@@ -156,7 +156,8 @@ h2{
     justify-content: center;
     padding-top: 50px;
     width: 650px;
-    background-color: #3b3ec0aa;;
+    background-color: #3b3ec0aa;
+   border: 2px solid black;
 }
 
 .imagen1{
