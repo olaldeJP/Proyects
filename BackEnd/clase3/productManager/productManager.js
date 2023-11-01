@@ -98,7 +98,7 @@ class productManager{
     }
 
      reset(){
-         fs.unlinkSync(this.#ruta);
+    
          fs.writeFile (this.#ruta,JSON.stringify(this.#products))
     }
 
