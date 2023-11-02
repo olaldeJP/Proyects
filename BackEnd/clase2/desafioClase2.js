@@ -90,3 +90,33 @@ class productManager{
    
 
 
+const p1 = {
+    id: 1,
+    title: 'T1',
+    description: 'D1',
+    price: 5,
+    thumbnail: '2',
+    code: '5',
+    stock: 5
+}
+const p2 = {
+    id: 2,
+    title: 'T2',
+    description: 'D2',
+    price: 5,
+    thumbnail: '2',
+    code: '1',
+    stock: 5
+}
+const p3 = {
+    id: 3,
+    title: 'T3',
+    description: 'D3',
+    price: 5,
+    thumbnail: '3',
+    code: '3',
+    stock: 5
+}
+const pm=new productManager()
+pm.addProduct(p1)
+pm.addProduct(p1)
