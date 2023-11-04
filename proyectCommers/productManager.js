@@ -9,7 +9,7 @@ function generarId() {
 class ProductManager{
     #ruta
     #products=[]
-    
+
     constructor(ruta){
         this.#products=[]
         this.#ruta=ruta
@@ -63,15 +63,20 @@ class ProductManager{
         const newArray=this.#products.filter((product) => product.id !== id)
         this.#products=newArray
         const Json=JSON.stringify(this.#products)
-        console.log(Json)
-        fs.writeFile(this.#ruta,Json)
+       
+       await fs.unlink(this.#ruta)
+       await fs.writeFile(this.#ruta,Json)
     }
     
-    updateProduct(id,campo,nuevoValor){
+   async updateProduct(id,campo,nuevoValor){
         let product= this.getProductById(id); 
+        if(product && (campo==='title'|| campo==='description' ||  campo==='price' || campo==='code'  || campo==='thumbnail' || campo==='stock')){
         product[campo]=nuevoValor
-        const Json=JSON.stringify(this.#products)
-        fs.writeFile(this.#ruta,Json)
+       const Json=  JSON.stringify(this.#products)
+       await  fs.writeFile(this.#ruta,Json)
+        }else{
+            console.log("ID O CAMPO INVALIDO")
+        }
     }
 }
 
@@ -116,5 +121,5 @@ const pm=new ProductManager('productsDB.JSON')
 pm.addProduct(p1)
 pm.addProduct(p2)
 pm.addProduct(p3)
-pm.updateProduct(3,'title','nuevoTitulo')
-pm.deleateProductById(2)
+pm.updateProduct(,'title','nuevoTitulo')
+//pm.deleateProductById(1)
