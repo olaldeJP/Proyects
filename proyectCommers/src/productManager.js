@@ -1,4 +1,5 @@
 import fs from 'fs/promises'
+import { Product } from './product'
 
 let id=1
 function generarId() {
@@ -121,5 +122,5 @@ const pm=new ProductManager('productsDB.JSON')
 pm.addProduct(p1)
 pm.addProduct(p2)
 pm.addProduct(p3)
-pm.updateProduct(,'title','nuevoTitulo')
+pm.updateProduct(1,'title','nuevoTitulo')
 //pm.deleateProductById(1)
